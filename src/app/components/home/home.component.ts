@@ -24,16 +24,28 @@ export class HomeComponent implements OnInit {
 
   }
 
-  addFeedback(){
+  // addFeedback(){
      
-    this.homeService.createFeedback(this.feedbackForm.value).subscribe(
-      (res:any)=>{
-        console.log(res);
-      }
-    )
+  //   this.homeService.createFeedback(this.feedbackForm.value).subscribe(
+  //     (res:any)=>{
+  //       console.log(res);
+  //     }
+  //   )
    
     
   
+  // }
+
+  addFeedback() {
+    
+
+    // this.refID = Math.floor(Math.random() * 90000) + 10000
+    // this.form.get('RefID').setValue(this.refID)
+    // this.form.get('enrolledUsers').setValue(this.enrolledUsers)
+    this.homeService.createFeedback(this.feedbackForm.value)
+   
+
+
   }
 }
 
