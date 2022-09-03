@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
     
     this.homeService.createFeedback(this.feedbackForm.value).then((res:any)=>{
       console.log(res);
-      this.toastr.success("", 'Birthdays are one day event. Your wish mean so much to me. THANK YOU!');
+      this.toastr.success("", `Birthdays are one day event. Your wish mean so much to me. THANK YOU! ${this.feedbackForm.value.name}`);
      this.feedbackForm.reset()
     })
     
