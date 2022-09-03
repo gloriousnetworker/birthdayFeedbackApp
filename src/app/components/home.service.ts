@@ -22,18 +22,7 @@ export class HomeService {
 //   }
 
 createFeedback(value: any) {
-    return new Promise<any>((resolve, reject) => {
-      this.firestore.collection("form").add(value).then((res:any) => {
-        // this.toastr.success("", "Agent Added Successfully!")
-        console.log(res);
-        
-      }, (err: any) => {
-        reject(err);
-        console.log(err);
-        
-        // this.toastr.success("", "An Error Occurred!")
-      })
-    });
+    return this.firestore.collection("form").add(value);
   }
 
 
