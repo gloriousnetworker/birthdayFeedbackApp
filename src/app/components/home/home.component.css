@@ -1,0 +1,92 @@
+.home-image {
+  background-image: url("../../../assets/images/cake3.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 219px 0px 465px 0px;
+  height: 1000px;
+}
+
+/* counter */
+
+.quiz-top-area {
+  background: rgba(56, 140, 124, 0.1);
+  padding: 66px 13px;
+  height: 200px;
+  margin-top: 23px;
+
+}
+
+.quiz-top-area h1 {
+  color: #fff;
+  font-size: 25px;
+}
+.quiz-top-area .quiz-countdown {
+  top: 82px;
+  right: 30%;
+}
+.quiz-top-area .quiz-countdown li {
+  width: 109px;
+  height: 90px;
+  margin-left: 12px;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  background-color: #e6e6e6;
+}
+.quiz-top-area .quiz-countdown li:after {
+  top: 0;
+  right: -12px;
+  content: ":";
+  color: #ffff;
+  font-size: 50px;
+  position: absolute;
+}
+.quiz-top-area .quiz-countdown li:last-child:after {
+  display: none;
+}
+.quiz-top-area .quiz-countdown .count-down-number {
+  font-size: 70px;
+  line-height: 50px;
+  font-family: "Open Sans";
+  color: red;
+  font-weight: 700;
+}
+.quiz-top-area .quiz-countdown .count-unit {
+  display: block;
+  color: #ffff;
+  margin-top: 0px;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: rgb(55, 63, 104) none repeat scroll 0% 0% !important;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.add-btn {
+  background: rgb(173, 31, 234) none repeat scroll 0% 0%;
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(242, 244, 254);
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(242, 244, 254);
+}

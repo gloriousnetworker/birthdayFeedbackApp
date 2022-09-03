@@ -1,0 +1,158 @@
+<main class="home-image">
+  <!-- START GET STARTED -->
+
+  <div class="container">
+    <section>
+        <div
+        class="section-lg bg-cta"
+        style="padding-bottom: 2px; padding-top: 40px; position: relative"
+      >
+        <div class="bg-overlay launching-soon"></div>
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <div>
+                <h1 class="text-white fw-normal">MY BIRTHDAY COUNT DOWN !!!</h1>
+                <div class="title-border"></div>
+    
+                <div class="quiz-top-area text-center">
+                  <!-- <h1>Personality Survey Quiz</h1> -->
+                  <div class="quiz-countdown text-center ul-li">
+                    <ul class="min-length">
+                      <li class="days">
+                        <span class="count-down-number"></span>
+                        <span class="count-unit">Days</span>
+                      </li>
+    
+                      <li class="hours">
+                        <span class="count-down-number"></span>
+                        <span class="count-unit">Hours</span>
+                      </li>
+    
+                      <li class="minutes">
+                        <span class="count-down-number"></span>
+                        <span class="count-unit">Min</span>
+                      </li>
+    
+                      <li class="seconds">
+                        <span class="count-down-number"></span>
+                        <span class="count-unit">Sec</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+      <section>
+        <div
+        class="section-lg bg-cta"
+        style="padding-bottom: 2px; padding-top: 40px; position: relative"
+      >
+        <div class="bg-overlay launching-soon"></div>
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <div>
+                <div class="title-border"></div>
+    
+                <div class="card" >
+                  <div class="card-body" >
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <p class="text-white fw-normal text">My Birthday Feedbacks</p>
+                        </div>
+      
+                    <div class="col-3">
+
+                    </div>
+                        <div class="col mr-auto">
+                          <button type="button" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#gifting" style="margin-right: 20px;">Giftings🙌🏽</button>
+                          <button type="button" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 20px;">Add Feedback✍🏽</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+     
+  
+  </div>
+  
+
+
+
+
+
+<!-- Modal add feedback-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add Feedbacks & Wishes for your boy!📝</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="feedbackForm">
+          <div class="form-group mb-3">
+            <label for="formGroupExampleInput">Your Name</label>
+            <input type="text" class="form-control" formControlName="name" required >
+          </div>
+          <div class="form-group mb-3">
+            <label for="formGroupExampleInput2">Phone</label>
+            <input type="text" class="form-control" formControlName="phone" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="formGroupExampleInput2">Feedback & Wish Detail</label>
+            <textarea class="form-control" formControlName="message"  required></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="
+        color: rgb(242, 244, 254);
+        background: rgb(101, 110, 163) none repeat scroll 0% 0%;
+    ">Close</button>
+        <button type="button" (click)="addFeedback()"  class="btn btn-primary add-btn">Add Feedback✍🏽</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal add feedback-->
+
+
+<!-- Modal add feedback-->
+<div class="modal fade" id="gifting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Send in your Gifts & Wishes for your boy!😁🤭</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          
+          <li class="list-group-item"><span><strong style="color: red; font-size: 25px;">Account Name:</strong> <strong> Iniubong Uko Udofot</strong></span> </li>
+          <li class="list-group-item"><span> <strong style="color: red; font-size: 25px;">Bank Name :</strong> <strong> United Bank For Africa (UBA)</strong></span> </li>
+          <li class="list-group-item"><span><strong style="color: red; font-size: 25px;"> Number :</strong><strong> 2066238173</strong></span></li>
+          <li class="list-group-item"><span><strong style="color: red; font-size: 25px;">Contact :</strong><strong> +234 802-498-3733</strong></span> </li>
+          <li class="list-group-item"><span><strong style="color: red; font-size: 25px;"> Email :</strong><strong> iniubongudofot2000@gmail.com</strong></span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Modal add feedback-->
+
+</main>
