@@ -183,7 +183,7 @@
 			},
 			countDown:  function (){
 				if ($('.quiz-countdown').length > 0) {
-					var deadlineDate = new Date('sep 4, 2022 23:59:59').getTime();
+					var deadlineDate = new Date('sep 3, 2022 23:59:59').getTime();
 					var countdownDays = document.querySelector('.days .count-down-number');
 					var countdownHours = document.querySelector('.hours .count-down-number');
 					var countdownMinutes = document.querySelector('.minutes .count-down-number');
@@ -199,6 +199,11 @@
 						countdownHours.innerHTML = hours;
 						countdownMinutes.innerHTML = minutes;
 						countdownSeconds.innerHTML = seconds;
+
+
+
+
+
 					}, 1000);
 
 				};
