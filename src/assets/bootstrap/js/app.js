@@ -1,8 +1,8 @@
  /* Theme Name: Deazy
-    Author: Themesdesign
-    Version: 1.0.0
-    File Description: Main JS file of the template
- */
+     Author: Themesdesign
+     Version: 1.0.0
+     File Description: Main JS file of the template
+  */
 
  //  Window scroll sticky class add
 
@@ -13,9 +13,9 @@
          document.body.scrollTop >= 50 ||
          document.documentElement.scrollTop >= 50
      ) {
-         navbar.classList?.add("nav-sticky") || '';
+         navbar.classList ? .add("nav-sticky") || '';
      } else {
-         navbar.classList?.remove("nav-sticky")|| '';
+         navbar.classList ? .remove("nav-sticky") || '';
      }
  }
 
@@ -157,63 +157,61 @@
      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ffffff}";
      document.body.appendChild(css);
  };
-//  window.onload(typewrite());
-//  window.onload(typewrite());
+ //  window.onload(typewrite());
+ //  window.onload(typewrite());
 
-(function() {
+ (function() {
 
-	"use strict";
+     "use strict";
 
-	var Wizard = {
-		init: function() {
-			this.Basic.init();
-		},
+     var Wizard = {
+         init: function() {
+             this.Basic.init();
+         },
 
-		Basic: {
-			init: function() {
+         Basic: {
+             init: function() {
 
-				this.preloader();
-				this.countDown();
+                 this.preloader();
+                 this.countDown();
 
-			},
-			preloader: function (){
-				jQuery(window).on('load', function(){
-					jQuery('#preloader').fadeOut('slow',function(){jQuery(this).remove();});
-				});
-			},
-			countDown:  function (){
-				if ($('.quiz-countdown').length > 0) {
-					var deadlineDate = new Date('sep 3, 2022 23:59:59').getTime();
-					var countdownDays = document.querySelector('.days .count-down-number');
-					var countdownHours = document.querySelector('.hours .count-down-number');
-					var countdownMinutes = document.querySelector('.minutes .count-down-number');
-					var countdownSeconds = document.querySelector('.seconds .count-down-number');
-					setInterval(function () {
-						var currentDate = new Date().getTime();
-						var distance = deadlineDate - currentDate;
-						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-						countdownDays.innerHTML = days;
-						countdownHours.innerHTML = hours;
-						countdownMinutes.innerHTML = minutes;
-						countdownSeconds.innerHTML = seconds;
-
-
+             },
+             preloader: function() {
+                 jQuery(window).on('load', function() {
+                     jQuery('#preloader').fadeOut('slow', function() { jQuery(this).remove(); });
+                 });
+             },
+             countDown: function() {
+                 if ($('.quiz-countdown').length > 0) {
+                     var deadlineDate = new Date('sep 4, 2022 23:59:59').getTime();
+                     var countdownDays = document.querySelector('.days .count-down-number');
+                     var countdownHours = document.querySelector('.hours .count-down-number');
+                     var countdownMinutes = document.querySelector('.minutes .count-down-number');
+                     var countdownSeconds = document.querySelector('.seconds .count-down-number');
+                     setInterval(function() {
+                         var currentDate = new Date().getTime();
+                         var distance = deadlineDate - currentDate;
+                         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                         countdownDays.innerHTML = days;
+                         countdownHours.innerHTML = hours;
+                         countdownMinutes.innerHTML = minutes;
+                         countdownSeconds.innerHTML = seconds;
 
 
 
-					}, 1000);
-
-				};
-			},
-		}
-	}
-	jQuery(document).ready(function (){
-		Wizard.init();
-	});
-
-})();
 
 
+                     }, 1000);
+
+                 };
+             },
+         }
+     }
+     jQuery(document).ready(function() {
+         Wizard.init();
+     });
+
+ })();
