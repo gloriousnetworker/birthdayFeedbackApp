@@ -12,12 +12,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { WishesComponent } from './components/wishes/wishes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
 
-    HomeComponent
+    HomeComponent,
+     WishesComponent
   ],
   imports: [
     BrowserModule,

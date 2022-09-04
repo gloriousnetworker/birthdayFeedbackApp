@@ -25,5 +25,10 @@ createFeedback(value: any) {
     return this.firestore.collection("form").add(value);
   }
 
+  getWishes(){
+      return this.firestore.collection("form")
+  
+  }
+
 
 }
