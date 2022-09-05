@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let list of wishes;let i=index">
+            <div class="card text-center">
+                <div class="card-header bg-info">
+                    Wishes ({{i+1}})
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-info">{{list.name}}</h5>
+                    <i class="card-text  mb-2">{{list.message}}</i>
+                    <blockquote class="blockquote mt-4">
+                        <footer class="blockquote-footer">{{list.phone}}</footer>
+                    </blockquote>
+                </div>
+                <div class="card-footer text-muted">
+                    {{list?.date?.seconds | date:'medium'}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
