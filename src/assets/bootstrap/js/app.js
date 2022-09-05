@@ -195,10 +195,10 @@
 						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-						countdownDays.innerHTML = days;
-						countdownHours.innerHTML = hours;
-						countdownMinutes.innerHTML = minutes;
-						countdownSeconds.innerHTML = seconds;
+						countdownDays.innerHTML = 00;
+						countdownHours.innerHTML = 00;
+						countdownMinutes.innerHTML = 00;
+						countdownSeconds.innerHTML = 00;
 
 
 
