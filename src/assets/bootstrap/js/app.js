@@ -161,8 +161,7 @@ function typewrite() {
 //  window.onload(typewrite());
 
 (function() {
-
-<<<<<<< HEAD
+ HEAD
 	"use strict";
 
 	var Wizard = {
@@ -214,7 +213,7 @@ function typewrite() {
 	jQuery(document).ready(function (){
 		Wizard.init();
 	});
-=======
+
     "use strict";
 
     var Wizard = {
@@ -266,6 +265,6 @@ function typewrite() {
     jQuery(document).ready(function() {
         Wizard.init();
     });
->>>>>>> b5fbe3c0cf25e394b2737a4bdd33ce9f7688706d
+ b5fbe3c0cf25e394b2737a4bdd33ce9f7688706d
 
 })();
